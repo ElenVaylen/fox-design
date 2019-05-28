@@ -1,0 +1,33 @@
+include ../../components/button/button
+
+mixin company-item(img)
+  .company__item
+    .company__item-wrap
+      img(src=img)
+
+section.company.section#company
+  ._container.container
+    ._wrap
+      h2.section-title
+        span С нами уже
+        b работают
+      ._list
+        ._row
+          +company-item('./img/company1.png')
+          +company-item('./img/company2.png')
+          +company-item('./img/company3.png')
+          +company-item('./img/company2.png')
+          +company-item('./img/company3.png')
+          +company-item('./img/company1.png')
+          +company-item('./img/company1.png')
+          +company-item('./img/company2.png')
+          +company-item('./img/company3.png')
+          +company-item('./img/company2.png')
+          +company-item('./img/company3.png')
+          +company-item('./img/company1.png')
+        .company__arrows
+      ._buttons
+        ._but
+          +button('Заказать', "#", '')
+        ._but
+          +button('Заказать', "#", '')

@@ -1,0 +1,9 @@
+import "../../blocks/modules/main/main.js";
+import "../../blocks/modules/header/header.js";
+import "../../blocks/modules/top-menu/top-menu.js";
+import "../../blocks/modules/services/services.js";
+import "../../blocks/modules/team/team.js";
+import "../../blocks/modules/work/work.js";
+import "../../blocks/modules/portfolio/portfolio.js";
+import "../../blocks/modules/company/company.js";
+import "../../blocks/modules/footer/footer.js";

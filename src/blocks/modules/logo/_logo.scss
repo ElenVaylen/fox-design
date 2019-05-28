@@ -1,0 +1,17 @@
+.logo {
+  @media (max-width:$laptop-l) {
+    width: 150px;
+  }
+  @media (max-width:$laptop-s) {
+    width: 135px;
+  }
+  @media (max-width:$mobile-s) {
+    width: 115px;
+  }
+  &-link {
+    display: block;
+    img {
+      display: block;
+    }
+  }
+}

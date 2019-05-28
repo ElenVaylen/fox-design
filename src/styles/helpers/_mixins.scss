@@ -1,0 +1,81 @@
+//Offsets
+$offset: 20px;
+
+@mixin flex(){
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin flex-row(){
+  @include flex();
+  @include row-offset();
+}
+@mixin col() {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+@mixin col-p() {
+  @include col();
+  @include col-offset();
+}
+@mixin col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+@mixin col-auto-p() {
+  @include col-auto();
+  @include col-offset();
+}
+@mixin row-offset() {
+  margin-right: ($offset * -1);
+  margin-left: ($offset * -1);
+}
+@mixin col-offset() {
+  padding-right: $offset;
+  padding-left: $offset;
+}
+@mixin row-bottom() {
+  margin-bottom: -$offset * 2;
+}
+@mixin col-bottom() {
+  margin-bottom: $offset * 2;
+}
+
+@mixin font-size(){
+  font-size: $title-size;
+  @media (max-width:$laptop-l) {
+    font-size: $title-size-laptop-l;
+  }
+  @media (max-width:$laptop-s) {
+    font-size: $title-size-laptop-s;
+  }
+  @media (max-width:$tablet) {
+    font-size: $title-size-tablet;
+  }
+  @media (max-width:$mobile-s) {
+    font-size: $title-size-mobile-s;
+  }
+}
+
+@mixin font-size-big(){
+  font-size: $title-size-big;
+  @media (max-width:$laptop-l) {
+    font-size: $title-size-big-laptop-l;
+  }
+  @media (max-width:$laptop-s) {
+    font-size: $title-size-big-laptop-s;
+  }
+  @media (max-width:$tablet) {
+    font-size: $title-size-big-tablet;
+  }
+  @media (max-width:$mobile-l) {
+    font-size: $title-size-big-mobile-l;
+  }
+  @media (max-width:$mobile-s) {
+    font-size: $title-size-big-mobile-s;
+  }
+  @media (max-width:$mobile-xs) {
+    font-size: $title-size-big-mobile-xs;
+  }
+}

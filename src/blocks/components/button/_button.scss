@@ -1,0 +1,43 @@
+.button {
+  font-size: $title-size;
+  font-weight: 300;
+  height: 60px;
+  width: 360px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-first;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: $color-primary;
+  background-color: $color-contsrast;
+  border-radius: 2px;
+  @media (max-width:$laptop-l) {
+    height: 54px;
+    width: 280px;
+    font-size: 24px;
+  }
+  @media (max-width:$laptop-s) {
+    height: 52px;
+    width: 260px;
+    font-size: 22px;
+  }
+  @media (max-width:$tablet) {
+    height: 50px;
+    width: 240px;
+    font-size: 20px;
+  }
+  @media (max-width:$mobile-s) {
+    height: 46px;
+    width: 220px;
+    font-size: 18px;
+  }
+  span {
+    display: block;
+  }
+  &:hover {
+    background-color: darken($color: #f49219, $amount: 20%);
+    color: $color-second;
+  }
+}

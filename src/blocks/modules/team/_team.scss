@@ -1,0 +1,83 @@
+.team {
+  padding-bottom: 140px;
+  @media (max-width:$laptop-l) {
+    padding-bottom: 120px;
+  }
+  &__list {
+    position: relative;
+  }
+  &__row {
+    @include flex();
+    @include row-offset();
+    margin-bottom: -60px;
+    @media (max-width:$mobile-xl) {
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      max-width: 450px;
+      margin: auto;
+    }
+  }
+  &__item {
+    width: 33.33%;
+    @include col-offset();
+    margin-bottom: 60px;
+    @media (max-width:$mobile-xl) {
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-bottom: 0px;
+    }
+    &-wrap {
+      position: relative;
+      @media (max-width:$mobile-xl) {
+        text-align: center;
+      }
+      &:hover {
+        .team__item-img-2 {
+          opacity: 1;
+        }
+      }
+    }
+    &-img {
+      overflow: hidden;
+      position: relative;
+      &-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    &-name {
+      font-size: 38px;
+      margin: 20px 0 10px 0;
+      @media (max-width:$laptop-l) {
+        font-size: 28px;
+        margin: 15px 0 8px 0;
+      }
+      @media (max-width:$laptop-s) {
+        font-size: 22px;
+        margin: 12px 0 6px 0;
+      }
+      b {
+        font-weight: 900;
+      }
+    }
+    &-work {
+      font-weight: 900;
+      font-size: 26px;
+      @media (max-width:$laptop-l) {
+        font-size: 20px;
+      }
+      @media (max-width:$laptop-s) {
+        font-size: 16px;
+      }
+    }
+  }
+}

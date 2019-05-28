@@ -1,0 +1,40 @@
+// Colors
+$color-primary: #000;
+$color-second: #fff;
+$color-contsrast: #f49219;
+$color-link: #2c126e;
+$color-grey: #dddddd;
+
+// Fonts
+$base-font-size: 16px;
+$font-first: 'Museo Sans Cyrl';
+
+$title-size: 30px;
+$title-size-laptop-l: 24px;
+$title-size-laptop-s: 20px;
+$title-size-tablet: 18px;
+$title-size-mobile-s: 16px;
+
+$title-size-big: 68px;
+$title-size-big-laptop-l: 48px;
+$title-size-big-laptop-s: 38px;
+$title-size-big-tablet: 34px;
+$title-size-big-mobile-l: 30px;
+$title-size-big-mobile-s: 28px;
+$title-size-big-mobile-xs: 25px;
+//Width
+$container-width: 1630px;
+
+//Breakpoints 
+//max-width
+$laptop-xl: 1890px; //1440px
+$laptop-l: 1599px; //1440px
+$laptop-m: 1439px; //1366px
+$laptop-s: 1365px; //1280px
+$laptop-xs: 1279px; //1024px
+$tablet: 1023px; //768px
+$mobile-xl: 767px; //667px
+$mobile-l: 666px; //568px
+$mobile-m: 567px; //425px
+$mobile-s: 424px; //375px
+$mobile-xs: 374px; //320px

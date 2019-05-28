@@ -1,0 +1,30 @@
+.slider-dots {
+  text-align: center;
+  margin-top: $offset-section;
+  @media (max-width:$tablet) {
+    margin-top: $offset-section * $coefficient1;
+  }
+  li {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  button {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 0px;
+    background: $color-button;
+    cursor: pointer;
+    &:hover {
+      background: $color-blue;
+    }
+  }
+}
+.slick-active button {
+  background: $color-blue;
+}

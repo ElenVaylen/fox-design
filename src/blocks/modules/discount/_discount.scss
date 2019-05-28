@@ -1,0 +1,45 @@
+.discount {
+  background-color: $color-grey;
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/discount1.jpg) no-repeat top right / cover;
+    width: 839px;
+    height: 670px;
+    @media (max-width:$laptop-xl) {
+      width: 758px;
+      height: 600px;
+    }
+    @media (max-width:$laptop-l) {
+      width: 629px;
+      height: 500px;
+    }
+    @media (max-width:$laptop-s) {
+      width: 507px;
+      height: 405px;
+    }
+    @media (max-width:$tablet) {
+      opacity: 0.2;
+      width: 465px;
+      height: 371px;
+    }
+    @media (max-width:$mobile-xl) {
+      width: 375px;
+      height: 303px;
+    }
+    @media (max-width:$mobile-s) {
+      width: 346px;
+      height: 277px;
+    }
+    @media (max-width:$mobile-xs) {
+      width: 310px;
+      height: 250px;
+    }
+  }
+}

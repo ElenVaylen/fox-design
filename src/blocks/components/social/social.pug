@@ -1,0 +1,11 @@
+mixin social-item(icon)
+  .social__item
+    a.social__item-wrap(class= icon href="#")
+
+.social
+  ._row
+    +social-item('icon-facebook')
+    +social-item('icon-twitter')
+    +social-item('icon-bubbles2')
+    +social-item('icon-dribbble')
+    

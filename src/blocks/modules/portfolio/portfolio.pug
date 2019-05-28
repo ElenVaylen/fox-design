@@ -1,0 +1,27 @@
+mixin portfolio-item(img, title)
+  .portfolio__item
+    .portfolio__item-wrap
+      img.portfolio__item-img(src=img)
+      .portfolio__item-content
+        .portfolio__item-content__wrap
+          h3.portfolio__item-title= title
+      a.portfolio__item-link(href="#")
+
+section.portfolio.section#portfolio
+  ._container.container
+    ._wrap
+      h2.section-title
+        span Наше
+        b портфолио
+      ._list
+        ._row
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+          +portfolio-item('./img/portfolio1.jpg', 'Заголовок')
+        .portfolio__arrows

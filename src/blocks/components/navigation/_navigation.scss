@@ -1,0 +1,36 @@
+.navigation {
+  &__container {
+    border-top: 3px solid $color-grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__row {
+    @include flex();
+  }
+  &__item {
+    margin-right: 25px;
+    position: relative;
+    a {
+      color: $color-button;
+      font-weight: 600;
+      &:hover {
+        color: $color-blue;
+      }
+    }
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid $color-primary;
+      border-top: 1px solid $color-primary;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 6px;
+      right: -14px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}

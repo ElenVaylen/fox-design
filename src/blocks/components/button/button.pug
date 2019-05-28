@@ -1,0 +1,7 @@
+mixin button(button_title, button_link, button_class, button_type_but)
+  if(button)
+    button.button(class=button_class)
+      span._wrap= button_title
+  else
+    a.button(class=button_class href=button_link)
+      span._wrap= button_title

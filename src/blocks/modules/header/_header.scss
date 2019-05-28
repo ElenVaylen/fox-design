@@ -1,0 +1,48 @@
+.header {
+  &-top {
+    position: relative;
+    background-color: $color-second;
+    padding: 25px 0;
+    @media (max-width:$tablet) {
+      padding: 40px 0 0 0;
+    }
+    &__row {
+      @include flex();
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width:$tablet) {
+        padding: 12px 0;
+      }
+    }
+    &__phone {
+      @media (max-width:$tablet) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-color: $color-grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-link {
+        color: $color-link;
+        font-size: 42px;
+        font-weight: 900;
+        @media (max-width:$laptop-xl) {
+          font-size: 36px;
+        }
+        @media (max-width:$laptop-l) {
+          font-size: 28px;
+        }
+        @media (max-width:$laptop-s) {
+          font-size: 24px;
+        }
+        @media (max-width:$mobile-s) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  outline: none;
+  border: none;
+  background: none;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  &:before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-right: 4px solid $color-primary;
+    border-top: 4px solid $color-primary;
+    transform: rotate(45deg);
+  }
+  &__prev {
+    left: 0px;
+    &:before {
+      transform: rotate(-135deg);
+    }
+  }
+  &__next {
+    right: 0px;
+  }
+}

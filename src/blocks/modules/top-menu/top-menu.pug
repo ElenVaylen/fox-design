@@ -1,0 +1,21 @@
+mixin top-menu(name, link)
+  .top-menu__item
+    a(href=link).top-menu__link= name
+
+nav.top-menu
+  ._bar
+    ._bar-wrap
+      ._bar-line
+      ._bar-line
+      ._bar-line
+  ._wrap
+    ._close
+      ._close-line
+      ._close-line
+    ._row
+      +top-menu('Услуги', '#services')
+      +top-menu('О нас', '#about')
+      +top-menu('Портфолио', '#portfolio')
+      +top-menu('Скидка', '#discount')
+      +top-menu('Контакты', '#contacts')
+    

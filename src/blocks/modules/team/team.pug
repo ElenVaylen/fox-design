@@ -1,0 +1,27 @@
+mixin team-item(name, surname, work, img, img_hover)
+  .team__item
+    .team__item-wrap
+      .team__item-img
+        img.team__item-img-1(src=img)
+        img.team__item-img-2(src=img_hover)
+      p.team__item-name
+        b= name
+        span= surname
+      p.team__item-work= work
+
+section.team.section#team
+  ._container.container
+    ._wrap
+      h2.section-title
+        b КОМАНДА
+        span Супергероев
+        span.section-title__min Мы делаем Ваш бизнес лучше!
+    ._list
+      ._row
+        +team-item('Казадаева ', 'Евгения', 'Креативный директор', './img/team1.jpg', './img/team1-1.jpg')
+        +team-item('Казадаева ', 'Евгения', 'Креативный директор', './img/team2.jpg', './img/team1-1.jpg')
+        +team-item('Казадаева ', 'Евгения', 'Креативный директор', './img/team3.jpg', './img/team1-1.jpg')
+        +team-item('Казадаева ', 'Евгения', 'Креативный директор', './img/team4.jpg', './img/team1-1.jpg')
+        +team-item('Казадаева ', 'Евгения', 'Креативный директор', './img/team6.jpg', './img/team1-1.jpg')
+        +team-item('Казадаева ', 'Евгения', 'Креативный директор', './img/team5.jpg', './img/team1-1.jpg')
+      .team__arrows
